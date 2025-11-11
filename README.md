@@ -15,4 +15,5 @@ git push origin <branch-name>
 
 some file present that you don't want to commit or push like .env file
 Add a file named ".gitignore" and untracked file names to that file
+git didn't track empty folders, so we have to add a file named ".gitkeep" in that empty folder so that git can track
 
