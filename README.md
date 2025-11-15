@@ -88,7 +88,12 @@ git reflog <commit-hash>
 git reset --hard HEAD@{1}
 git reset --hard <commit-id>
 
-**Github** and **Gitlab**
+**Github push** 
+git remote add origin https://github.com/satyasiba001/LearnGit.git
+git add .
+git commit -m "added"
+git push origin main
+
 
 
 
