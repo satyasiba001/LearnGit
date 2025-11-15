@@ -89,12 +89,24 @@ git reset --hard HEAD@{1}
 git reset --hard <commit-id>
 
 **Github push** 
+git remote -v
 git remote add origin https://github.com/satyasiba001/LearnGit.git
+git remote add upstream https://github.com/satyasiba001/LearnGit.git
 git add .
 git commit -m "added"
-git push origin main
+git push --set-upstream origin main ==> set default branch to push
+git push  or  git push origin <branch-name>
 
-
-
+**Git fork**
+Click “Fork” → choose your account → GitHub creates your own copy.
+git clone https://github.com/YOUR_USERNAME/PROJECT_NAME.git
+cd PROJECT_NAME
+git remote add upstream https://github.com/ORIGINAL_OWNER/PROJECT_NAME.git
+git remote -v
+git checkout -b feature/my-change
+git add .
+git commit -m "Describe your change"
+git push origin feature/my-change
+On GitHub → “Compare & Pull Request” → send it to the original repo.
 
 
