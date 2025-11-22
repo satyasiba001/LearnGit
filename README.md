@@ -1,9 +1,7 @@
 git init
 git branch -m main #rename the current branch
 
-git config --global user.name "sibu"
-git config --global user.email "thetripples530@gmail.com"
-git config --global core.editor "code --wait"
+
 
 git status
 git log
