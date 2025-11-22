@@ -15,7 +15,18 @@ git push origin <branch-name>
 
 some file present that you don't want to commit or push like .env file
 Add a file named ".gitignore" and untracked file names to that file
-git didn't track empty folders, so we have to add a file named ".gitkeep" in that empty folder so that git can track
+git didn't track empty folders, so we have to add a file named ".gitkeep" in that empty folder so that git can track.
+
+You chnaged something and checked the changes by using 
+git status
+git add <file-name>
+git restore <file-name> ==> to discard the changes
+git restore --staged <file-name> ==> remove file from staged area to modified area
+git rm --cached <file-name>   ==> cached the file
+git add <file-name> ==> to add the file to staging area
+git commit -m "updated the first story"
+git add . ==> stage all the changes
+
 
 Musketeers of git
 - Commit Object
@@ -83,6 +94,7 @@ git log --oneline ==> you wont get any extra commit msg in logs after rebase
 It is a simple informative command to see the history of commits
 
 git log --oneline
+git log --name-only
 git reflog
 git reflog <commit-hash>
 git reset --hard HEAD@{1}
