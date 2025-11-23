@@ -93,6 +93,7 @@ It is a simple informative command to see the history of commits
 
 git log --oneline
 git log --name-only
+git log <branch-name>  ==> to see commit history of a perticular branch
 git reflog
 git reflog <commit-hash>
 git reset --hard HEAD@{1}
